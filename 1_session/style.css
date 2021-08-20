@@ -1,0 +1,24 @@
+body {
+  background-color: lightsalmon;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+#whatever {
+  color: darkolivegreen;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+}
+/* 
+here is styling for the class */
+
+.someclass {
+  color: darkslategrey;
+}

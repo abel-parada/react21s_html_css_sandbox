@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(251, 234, 255);
+}
+
+header {
+  background-color: maroon;
+  padding: 25px;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+img {
+  height: 100px;
+  width: auto;
+  float: right;
+  margin: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.box1 {
+  background-color: lightcoral;
+}
+.box2 {
+  background-color: yellow;
+}
+.box3 {
+  background-color: pink;
+}
+.box4 {
+  background-color: blue;
+}
+.box5 {
+  background-color: red;
+}
