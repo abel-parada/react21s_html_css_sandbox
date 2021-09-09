@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: "Lato", sans-serif;
+  color: #333;
+}
+
+input,
+textarea,
+button {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h3 {
+  margin: 2rem 0;
+}
+
+p {
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: coral;
+  display: block;
+}
+.bg {
+  background-color: #fff;
+}
+/**************** Header area ****************/
+
+header {
+  background: url("https://source.unsplash.com/n7a2OJDSZns/") no-repeat fixed
+    center center/cover;
+}
+
+.main_nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 1rem;
+}
+header nav ul li a,
+.logo a {
+  text-decoration: none;
+  display: block;
+  color: #333;
+  padding: 0 1rem;
+}
+.logo a {
+  font-size: 2rem;
+}
+/**************** Hero-Banner area ****************/
+.hero-banner {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner h2 {
+  font-size: 5rem;
+  color: #333;
+  text-align: center;
+}
+
+/**************** For all sections ****************/
+
+section {
+  padding: 3rem;
+  min-height: 500px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+/**************** Projects area ****************/
+
+.card {
+  background-color: white;
+  width: 32%;
+  border-radius: 2px;
+  border: Gainsboro 1px solid;
+  padding: 10px;
+}
+
+.card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card h4,
+.card p,
+.card a {
+  margin: 20px;
+}
+
+/**************** About me area ****************/
+
+#about {
+  background: OldLace;
+}
+
+#about img {
+  float: right;
+  margin-left: 2rem;
+  width: 200px;
+}
+
+/**************** Skills area ****************/
+
+.box:nth-child(odd) {
+  background-color: rgb(228, 228, 228);
+}
+
+.box {
+  background-color: rgb(247, 247, 247);
+  padding: 2rem;
+  border: 1px solid rgb(222, 222, 222);
+  text-align: center;
+  margin: 1rem;
+}
+.material-icons {
+  margin: 25px;
+}
+progress[value] {
+  height: 1.5rem;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: coral;
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+/**************** Footer area ****************/
+
+footer {
+  background-color: #333;
+  padding: 2rem;
+}
+footer h3 {
+  color: white;
+}
+footer {
+  background-color: #333;
+  text-align: center;
+}
+
+.form-group {
+  padding: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 20%;
+  color: white;
+}
+
+input,
+textarea {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  width: 500px;
+}
+
+input[type="submit"] {
+  width: 200px;
+  background-color: coral;
+  color: white;
+  font-size: inherit;
+}
+
+/**************** Tablet support ****************/
+
+@media (max-width: 899px) {
+  header nav ul {
+    text-align: right;
+  }
+  .hero-banner h2 {
+    font-size: 3rem;
+  }
+  .box {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+}
+/**************** Mobile support ****************/
+@media (max-width: 576px) {
+  header .container {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+  .hero-banner h2 {
+    font-size: 1.5rem;
+    top: 30vh;
+    position: relative;
+  }
+  header nav ul {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  header nav ul li {
+    padding: 1rem 2rem;
+  }
+
+  .hero-banner {
+    height: 100vh;
+  }
+
+  .hero-banner h2 {
+    font-size: 1.5rem;
+  }
+  .content {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  input,
+  textarea,
+  label {
+    width: 100%;
+  }
+  .form-group {
+    padding: 0.5rem;
+  }
+  label {
+    margin-bottom: 0.5rem;
+  }
+}
